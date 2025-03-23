@@ -20,7 +20,7 @@ Esta extensión para Microsoft Edge permite parsear archivos CSV (valores separa
 1.  **Descarga el código:** Descarga este repositorio como un archivo ZIP o clónalo usando Git:
 
     ```bash
-    git clone <URL del repositorio>
+    git clone https://github.com/ACubero/aca_csvparser.git
     ```
 
 2.  **Carga la extensión en Edge:**
