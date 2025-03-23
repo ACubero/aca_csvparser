@@ -1,0 +1,140 @@
+body {
+  min-width: 500px;
+  max-width: 800px; /* Máximo inicial */
+  width: 80vw;
+  height: 70vh;
+  min-height: 400px;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8f2;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative; /* ¡IMPORTANTE para el resizeHandle! */
+}
+
+h1 {
+  color: #1a7541;
+  margin-bottom: 20px;
+  font-size: 2em;
+  border-bottom: 2px solid #1a7541;
+  padding-bottom: 8px;
+}
+
+.button-style {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button-style:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.button-style:active {
+  background-color: #1e7e34;
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#fileInput {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#fileInputLabel {
+  margin-bottom: 20px;
+  display: block;
+}
+
+#dropArea {
+  border: 2px dashed #a7d8b4;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #f9fdfa;
+  color: #555;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#dropArea.highlight {
+  border-color: #28a745;
+  background-color: #e0f7e5;
+}
+
+#output {
+  border: 1px solid #a7d8b4;
+  padding: 20px;
+  overflow: auto;
+  width: calc(100% - 40px);
+  height: calc(100% - 220px); /* Ajustado para el botón y el handle */
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px; /*Espacio para el botón*/
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #a7d8b4;
+  padding: 12px;
+  text-align: left;
+  font-size: 0.95em;
+}
+
+th {
+  background-color: #d2f0d8;
+  color: #1a7541;
+  font-weight: 600;
+  border-bottom: 2px solid #a7d8b4;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f0f8f2;
+}
+
+#error {
+  color: #dc3545;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+/* Estilo para el manejador de redimensionamiento */
+#resizeHandle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #a7d8b4; /* Color visible */
+  cursor: se-resize; /* Cursor de redimensionamiento diagonal */
+  border-bottom-right-radius: 6px; /* Redondea la esquina */
+}
+
+#openInNewTab{
+ margin-top: 10px;
+}
